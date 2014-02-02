@@ -3,7 +3,6 @@ include_once 'header.php';
 echo "<div class='main'><h3>Please enter your details to log in</h3>";
 $error = $user = $pass = "";
 
-
 //Here is where a user will try to log in.
 //The $_POST superglobal variable holds info submitted in the below form's POST request.
 //Check to make sure the 'user' field is actually present.

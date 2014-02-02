@@ -1,0 +1,236 @@
+/*EDITOR FORMATTING*/
+
+/*The whole editor*/
+#editor{
+overflow:auto;
+position: relative;
+margin: 10px;
+margin-left:5%;
+font-family: 'verdana';
+font-size: 20px;
+font-weight: 600;
+width:1150;
+border-radius: 10px;
+border: 1px solid;
+border-color: #b0b0ee;
+
+}
+
+.data-id{
+display: none;
+}
+
+.activity-id{
+display:none;
+}
+
+.workout{
+float:left;
+position: relative;
+margin:5px;
+font-family: 'verdana';
+font-size: 20px;
+font-weight: 600;
+min-width:700px;
+max-width: 700px;
+border-radius: 10px;
+border: 2px solid;
+border-color: #b0b0ee;
+}
+/*All divs within the workout Display should have the same background, border, and margins.*/
+.workout *:not(.noMargin){
+margin:5px;
+}
+
+.workout div{
+overflow:auto;
+border-radius:10px;
+}
+.workoutTitle{
+background-color:white;
+border: 1px solid;
+border-color: #b0b0ee;
+}
+.activity{
+background-color:white;
+border:2px solid;
+border-color:#b0b0ee;
+}
+/*Things descendent from editorTitle div*/
+.workoutTitle>*:not(.trashcan){
+float:left;
+margin:5px;
+font-size: 18;
+font-family: 'verdana';
+}
+.workoutTitle>input{
+    border:solid 1px #BFBDBD;
+	width: 200px;
+}
+.workoutTitle>input:first-of-type, .workoutTitle>.label:first-of-type{
+	width:110px;
+	margin-left:5px;
+}
+
+/*Things descendent from activity class*/
+
+.activityTitle{
+position:relative;
+border-radius: 10px;
+overflow:auto;
+}
+.activityTitle>div:first-of-type{
+float:left;
+}
+.set{
+border-top:solid 1px;
+border-color:#d0d0ee;
+overflow:auto;
+position:relative;
+background-color:white;
+}
+/*Though the set input forms will vary widely, 
+there are a few common classes used inside of a set div*/
+.set *{font-size:16}
+.set *:not(.trashcan){float:left}
+.set input, .set select {
+font-family: 'verdana';
+border:solid 1px #BFBDBD;
+width: 50px;
+}
+.set .stickTogether{
+overflow:auto;
+margin:5px;
+}
+
+.trashcan{
+background-color: red;
+background-image:url('images\\trashcan_black_d0d0ee.png');
+background-size: 22px 22px;
+float:right;
+height:22px;
+width:22px;
+}
+.trashcan:hover{
+background-color: red;
+background-image:url('images\\trashcan_red_d0d0ee.png');
+background-size: 22px 22px;
+float:right;
+height:22px;
+width:22px;
+}
+.set .trashcan{
+background-image:url('images\\trashcan_black_eeeeee.png');
+}
+.set .trashcan:hover{
+background-image:url('images\\trashcan_red_eeeeee.png');
+}
+.plus{
+margin:5px;
+margin-left:20px;
+position:relative;
+float:left;
+background-color: green;
+background-image:url('images\\plus_basic_black_d0d0ee.png');
+background-size: cover;
+height:22px;
+width:22px;
+}
+.plus:hover{
+margin:5px;
+margin-left:20px;
+position:relative;
+float:left;
+background-color: green;
+background-image:url('images\\plus_basic_green_d0d0ee.png');
+background-size: cover;
+height:22px;
+width:22px;
+}
+.activity .plus{
+margin:5px;
+margin-left:20px;
+position:relative;
+float:left;
+background-image:url('images\\plus_basic_black_d0d0ee.png');
+background-size: cover;
+height:22px;
+width:22px;
+}
+.activity .plus:hover{
+margin:5px;
+margin-left:20px;
+position:relative;
+float:left;
+background-image:url('images\\plus_basic_green_d0d0ee.png');
+background-size: cover;
+height:22px;
+width:22px;
+}
+.set .plus{
+margin:5px;
+margin-left:20px;
+position:relative;
+float:left;
+background-image:url('images\\plus_basic_black_eeeeee.png');
+background-size: cover;
+height:22px;
+width:22px
+}
+.set .plus:hover{
+margin:5px;
+margin-left:20px;
+position:relative;
+float:left;
+background-image:url('images\\plus_basic_green_eeeeee.png');
+background-size: cover;
+height:22px;
+width:22px;
+}
+
+
+#myActivities{
+float:left;
+position: relative;
+margin: 10px;
+font-family: 'verdana';
+font-size: 20px;
+font-weight: 600;
+width:400px;
+
+border-radius: 10px;
+border: 1px solid;
+border-color: #b0b0ee;
+}
+
+#myActivities * {
+margin: 5px;
+font-size:16pt;
+}
+#myActivities div{
+overflow:auto;
+border-radius:10px;
+}
+
+#myActivities>div{
+background-color:white;
+border: 1px solid;
+border-color: #b0b0ee;
+}
+
+#favorites>div{
+background-color:white;
+padding:5px;
+}
+
+#favorites>div:first-of-type{
+width:95%;
+background-color:white;
+}
+
+#myActivities>div>*{
+float:left;
+}
+.readyToDie{
+border-color:red
+}
